@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Roman Konashenkov](https://up.htmlacademy.ru/htmlcss/19/user/339855).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Позднякова](https://htmlacademy.ru/profile/lizzy).
 
 ---
 
