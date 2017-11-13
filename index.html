@@ -15,13 +15,12 @@
     			<li><a href="hotels.html">Гостиницы</a></li>
     		</ul>
     	</nav>
-    	<div class="heder-logo">
+    	<div class="header-logo">
     		<img src="img/logo.svg" width="135" height="70" alt="Логотип City of Sedona»">
     	</div>
     </header>
 
     <main class="container">
-
     	<section class="description">	
     		<h1 class="visually-hidden">Sedona</h1>
     		<h2>Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -94,19 +93,43 @@
     	</section>
 
     	<section class="map">
-            <img src="img/map.svg" alt="Наше местоположение">
+            <img src="img/map.svg" width="1240" height="475" alt="От Флагстаффа на юг по 17 шоссе">
     		<!--Здесь будет карта-->
     	</section>
 
-    	<section class="search-tours-form">
+    	<section class="search-tours">
     		<h2><button type="button">Поиск гостиницы в Седоне</button></h2>
-    		<!--Здесь будет форма-->
+    		<form class="search-tours-form" action="#" method="post">
+                <p>
+                    <label>
+                        Дата заезда:
+                        <input type="date" name="arrival" placeholder="24 апреля 2016">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Дата выезда:
+                        <input type="date" name="departure" placeholder="4 июля 2016">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Взрослые:
+                        <input type="number" name="adults" placeholder="2">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Дети:
+                        <input type="number" name="children" placeholder="0">
+                    </label>
+                </p>
+                <a class="button" href="#">Найти</a>
+            </form>
     	</section>
-
     </main>
 
     <footer class="main-footer">
-
     	<a href="#">#visitsedona</a>
     	<div class="footerl-social">
     		<ul>
@@ -118,7 +141,6 @@
     	<p class="footer-copyright">
     		Website by <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="40" alt="Логотип HTML Academy"></a>
     	</p>
-
     </footer>
 
 </body>

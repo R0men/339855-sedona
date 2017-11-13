@@ -15,7 +15,7 @@
     			<li><a href="hotels.html">Гостиницы</a></li>
     		</ul>
     	</nav>
-    	<div class="heder-logo">
+    	<div class="header-logo">
     		<a href="index.html">
                 <img src="img/logo.svg" width="135" height="70" alt="Логотип City of Sedona»">
             </a>
@@ -23,11 +23,68 @@
     </header>
 
     <main class="container">
-
     	<h1 class="visually-hidden">Поиск отеля</h1>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр для подборки жилья</h2>
-            <!--Здесь будет форма-->
+            <form action="#" class="filter" method="get">
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <label>
+                                <input class="filter-option filter-option-input" type="checkbox" name="pool" checked>
+                                Бассейн
+                            </label>
+                        </li>
+                        <li class="filter-option">
+                            <label>
+                                <input class="filter-option filter-option-input" type="checkbox" name="parking">
+                                Парковка
+                            </label>
+                        </li>
+                        <li class="filter-option">
+                            <label>
+                                <input class="filter-option filter-option-input" type="checkbox" name="wi-fi">
+                                Wi-Fi
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <label>
+                                <input class="filter-option filter-option-input" type="checkbox" name="hotel" checked>
+                                Гостиница
+                            </label>
+                        </li>
+                        <li class="filter-option">
+                            <label>
+                                <input class="filter-option filter-option-input" type="checkbox" name="motel" checked>
+                                Мотель
+                            </label>
+                        </li>
+                        <li class="filter-option">
+                            <label>
+                                <input class="filter-option filter-option-input" type="checkbox" name="apartments" checked>
+                                Апартаменты
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Стоимость в сутки (Р):</legend>
+                    <label>
+                        <ul>
+                            <li>От 0</li>
+                            <li>До 3000</li>
+                        </ul>
+                        <input type="range" name="dayprice" min="0" max="3000" step="1">
+                    </label><br>
+                    <a href="#" class="button button-invisible">Показать</a>
+                </fieldset>
+            </form>
         </section>
 
         <p>Найдено:3</p>
@@ -38,6 +95,7 @@
         </ul>
         <img src="img/icon-up-dir.svg" alt="Сортировка по возрастанию">
         <img src="img/icon-down-dir.svg" alt="Сортировка по убыванию">
+
         <section class="catalog">
             <h2 class="visually-hidden">Список отелей</h2>
             <ul class="catalog-list">
@@ -103,11 +161,9 @@
                 </li>
             </ul>
         </section>
-
     </main>
 
     <footer class="main-footer">
-
     	<a href="#">#visitsedona</a>
     	<div class="footerl-social">
     		<ul>
@@ -119,7 +175,6 @@
     	<p class="footer-copyright">
     		Website by <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="40" alt="Логотип HTML Academy"></a>
     	</p>
-
     </footer>
 
 </body>
