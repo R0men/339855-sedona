@@ -75,26 +75,34 @@
                 </fieldset>
                 <fieldset>
                     <legend>Стоимость в сутки (Р):</legend>
-                    <label>
-                        <ul>
-                            <li>От 0</li>
-                            <li>До 3000</li>
-                        </ul>
-                        <input type="range" name="dayprice" min="0" max="3000" step="1">
-                    </label><br>
-                    <a href="#" class="button button-invisible">Показать</a>
+                    <div class="range-filter">
+                        <div class="range-price">
+                            <input type="text" value="От 0">
+                            <input type="text" value="До 3000">
+                        </div>
+                        <div class="range-sliders">
+                            <div class="range-line">
+                                <div class="range-line-fill"></div>
+                            </div>
+                            <div class="range-slider range-slider-min" tabindex="0"></div>
+                            <div class="range-slider range-slider-max" tabindex="0"></div>
+                        </div>
+                    </div>
+                    <button type="submit" class="button button-invisible">Показать</button>
                 </fieldset>
             </form>
         </section>
-
-        <p>Найдено:3</p>
-        <ul class="sort-list">Сортировка:
-            <li class="sort-current"><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
-        </ul>
-        <img src="img/icon-up-dir.svg" alt="Сортировка по возрастанию">
-        <img src="img/icon-down-dir.svg" alt="Сортировка по убыванию">
+        
+        <div class="sort">
+            <p>Найдено:3</p>
+            <ul class="sort-list">Сортировка:
+                <li class="sort-current"><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По рейтингу</a></li>
+            </ul>
+            <a href="#"><img src="img/icon-up-dir.svg" alt="Сортировка по возрастанию"></a>
+            <a href="#"><img src="img/icon-down-dir.svg" alt="Сортировка по убыванию"></a>
+        </div>
 
         <section class="catalog">
             <h2 class="visually-hidden">Список отелей</h2>
