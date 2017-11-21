@@ -15,6 +15,15 @@ body {
 	background-repeat: no-repeat;
 }
 
+.catalog-page {
+	color: #ffffff;
+
+	background-color: #81b3d2;
+	background-image: url("../img/bg-cat.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
 a {
 	text-decoration: none;
 }
@@ -44,6 +53,11 @@ a {
 	background-color: #503e33;
 }
 
+.button-small {
+	font-size: 14px;
+	line-height: 21px;
+}
+
 .button-blue {
 	background-color: #81b3d2;
 }
@@ -57,6 +71,20 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 
 	background-color: #5496bd;
+}
+
+.button-invisible {
+	border: 2px solid #ffffff;
+	background-color: transparent;
+}
+
+.button-invisible:hover,
+.button-invisible:active,
+.button-invisible:focus {
+	font-weight: 400;
+	color: #000000;
+
+	background-color: #ffffff;
 }
 
 .main-nav {
@@ -89,7 +117,6 @@ a {
 .description {
 	text-align: center;
 
-	background-color: #ffffff;
 }
 
 .description h2 {
@@ -116,6 +143,8 @@ a {
 
 .features p {
 	font-weight: 400;
+
+	color: #ffffff;
 }
 
 .recommend {
@@ -195,6 +224,87 @@ a {
 	border: 2px solid #e5e5e5;
 }
 
+.filters fieldset {
+	border: none;
+}
+
+.filters legend {
+	font-size: 16px;
+}
+
+.filters ul {
+	list-style: none;
+}
+
+.filters input {
+	font: inherit;
+	font-weight: 400;
+	text-align: center;
+}
+
+.sort {
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.sort p {
+	font-size: 21px;
+	line-weight: 26px;
+}
+
+.sort ul {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+
+	list-style: none;
+}
+
+.sort a {
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-current a {
+	color: #81b3d2;
+	border: none;
+}
+
+.catalog {
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.catalog ul {
+	list-style: none;
+}
+
+.catalog-item h3 {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.catalog-item h3>a {
+	color: #000000;
+}
+
+.catalog-item-stars {
+	color: #81b3d2;
+}
+
+.catalog-item-info {
+	font-weight: 400;
+}
+
+.catalog-item-rate {
+	font-weight: 400;
+	color: #666666;
+
+	background-color: #f2f2f2;
+}
+
 .main-footer {
 	background-color: #ffffff;
 }
@@ -222,8 +332,8 @@ a {
 	background-color: #5496bd;
 }
 
-.footer-social a:active>img,
-.footer-social a:focus>img {
+.footer-social a:active img,
+.footer-social a:focus img {
 	opacity: 0.3;
 }
 
@@ -232,7 +342,5 @@ a {
 	font-weight: 400;
 }
 
-.footer-copyright a:focus {
-	color: #81b3d2;
-}
+
 
