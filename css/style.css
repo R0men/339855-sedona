@@ -16,12 +16,7 @@ body {
 }
 
 .catalog-page {
-	color: #ffffff;
-
-	background-color: #81b3d2;
-	background-image: url("../img/bg-cat.jpg");
-	background-position: 0 0;
-	background-repeat: no-repeat;
+	background-image: none;
 }
 
 a {
@@ -224,6 +219,15 @@ a {
 	border: 2px solid #e5e5e5;
 }
 
+.filters {
+	color: #ffffff;
+
+	background-color: #81b3d2;
+	background-image: url("../img/bg-cat.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
 .filters fieldset {
 	border: none;
 }
@@ -240,12 +244,6 @@ a {
 	font: inherit;
 	font-weight: 400;
 	text-align: center;
-}
-
-.sort {
-	color: #000000;
-
-	background-color: #ffffff;
 }
 
 .sort p {
@@ -269,12 +267,6 @@ a {
 .sort-current a {
 	color: #81b3d2;
 	border: none;
-}
-
-.catalog {
-	color: #000000;
-
-	background-color: #ffffff;
 }
 
 .catalog ul {
@@ -303,10 +295,6 @@ a {
 	color: #666666;
 
 	background-color: #f2f2f2;
-}
-
-.main-footer {
-	background-color: #ffffff;
 }
 
 .main-footer a {
