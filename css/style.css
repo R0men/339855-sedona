@@ -10,25 +10,43 @@ body {
 	text-transform: uppercase;
 
 	background-color: #ffffff;
-	background-image: url(../img/bg.jpg);
-	background-position: top center;
-	background-repeat: no-repeat;
 }
 
 .catalog-page {
 	background-image: none;
 }
 
+body > .container {
+	min-width: 768px;
+	width: 1200px;
+	margin: 0 auto;
+}
+
 a {
 	text-decoration: none;
 }
 
-.visually-hidden {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
@@ -104,22 +122,12 @@ a {
 	background-color: #ffffff;
 }
 
-.site-nav .container {
-	display: flex;
-	width: 80%;
-	margin: 0 auto;
-}
-
-.site-nav-wrap {
+.container .site-nav {
 	display: flex;
 }
 
-.site-nav-wrap:last-child {
-	margin-left: auto;
-}
-
-.site-nav-wrap li:first-child {
-	margin-right: 150px;
+.site-nav li:nth-child(2) {
+	margin-right: auto;
 }
 
 .site-nav a {
@@ -148,6 +156,11 @@ a {
 	padding-bottom: 54px;
 
 	text-align: center;
+
+	background-image: url(../img/bg.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 1000px ;
 }
 
 .description h2 {
@@ -417,6 +430,9 @@ a {
 }
 
 .catalog-list {
+	padding: 0;
+	margin: 0;
+
 	list-style: none;
 }
 
