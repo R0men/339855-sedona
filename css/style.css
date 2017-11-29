@@ -35,7 +35,6 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -323,7 +322,6 @@ input[type="radio"].visually-hidden {
 
 .search-hotels h2 {
 	margin: 0;
-	padding: 0;
 	padding-top: 52px;
 	padding-bottom: 30px;
 
@@ -334,8 +332,7 @@ input[type="radio"].visually-hidden {
 .search-hotels p {
 	width: 445px;
 	margin: 0 auto;
-	padding: 0;
-	margin-bottom: 47px;
+	padding-bottom: 47px;
 
 	line-height: 24px;
 	font-weight: 400;
@@ -549,9 +546,14 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-info {
+	display: flex;
 	margin: 0;
 
 	font-weight: 400;
+}
+
+.catalog-item-type {
+	width: 50%;
 }
 
 .catalog-item .button {
@@ -655,9 +657,10 @@ input[type="radio"].visually-hidden {
 
 .footer-copyright a {
 	display: inline-block;
-	padding-left: 83px;
 	width: 118px;
 	height: 43px;
+
+	vertical-align: middle;
 }
 
 .footer-copyright a:hover path {
@@ -667,11 +670,6 @@ input[type="radio"].visually-hidden {
 .footer-copyright a:active path,
 .footer-copyright a:focus path {
 	fill: #bdbbbc;
-}
-
-.copyright {
-	position: absolute;
-	top: 20%;
 }
 
 
