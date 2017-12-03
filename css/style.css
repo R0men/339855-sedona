@@ -17,10 +17,18 @@ body > .container {
 	width: 1200px;
 	margin: 0 auto;
 
-	background-image: url(../img/bg.jpg);
-	background-position: 0 0;
-	background-repeat: no-repeat;
-	background-size: ;
+	background-image:
+		url(../img/main-bg-shape.svg),
+		url(../img/main-cite.svg),
+		url(../img/main-title-2.svg),
+		url(../img/main-title-line.svg),
+		url(../img/main-title-3.svg), 
+		url(../img/main-title-1.svg),
+		url(../img/bg.jpg),
+		url(../img/map.svg);
+	background-position: 50% 511px, 50% 405px, 50% 270px, 50% 200px, 50% 188px, 50% 132px, 0 0, 0 bottom;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+	background-size: 100%, auto, auto, auto, auto, auto, 100% 720px, 1200px 593px;
 
 	box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
@@ -114,9 +122,11 @@ input[type="radio"].visually-hidden {
 	background-color: #ffffff;
 }
 
-.main-nav {
-	position: relative;
+.main-header {
+	margin-bottom: 510px;
+}
 
+.main-nav {
 	line-height: 26px;
 	color: #000000;
 }
@@ -135,13 +145,17 @@ input[type="radio"].visually-hidden {
 
 .site-nav li {
 	width: 20%;
-	padding: 15px 0;
+	padding: 16px 0;
 
 	text-align: center;
 }
 
 .site-nav li:nth-child(2) {
 	margin-right: auto;
+}
+
+.site-nav li:nth-child(4n+2) {
+	margin-right: 20%;
 }
 
 .site-nav a {
@@ -160,27 +174,36 @@ input[type="radio"].visually-hidden {
 	color: #766357;
 }
 
+.header-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header-logo {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	margin-left: -67.5px;
-	width: 135px;
-	height: 70px;
+  margin-top: -56px;
+  margin-bottom: -14px;
 
 	width: 135px;
 	height: 70px;
+}
+
+.catalog-header {
+	margin-bottom: 0;
 }
 
 .description {
 	padding-bottom: 54px;
 
 	text-align: center;
+
+	background-color: #ffffff;
 }
 
 .description h2 {
 	margin: 0 auto;
 	margin-bottom: 36px;
+	padding-top: 59px;
 	width: 440px;
 
 	font-size: 21px;
@@ -232,6 +255,13 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 23px;
 }
 
+.first-feature .img {
+	width: 67%;
+	background-image: url(../img/first-feature.jpg);
+	background-size: cover;
+	background-position: 0 50%;
+}
+
 .recommend {
 	padding-top: 60px;
 	padding-bottom: 83px;
@@ -272,6 +302,13 @@ input[type="radio"].visually-hidden {
 
 .second-feature .feature-title {
 	order: 1;
+}
+
+.second-feature .img {
+	width: 67%;
+	background-image: url(../img/second-feature.jpg);
+	background-size: cover;
+	background-position: 0 50%;
 }
 
 .other-features {
@@ -338,42 +375,58 @@ input[type="radio"].visually-hidden {
 	font-weight: 400;
 }
 
+.search-hotels button{
+	padding: 30px 10px;
+	width: 570px;
+	margin: 0 auto;
+
+	box-shadow: 0px 10px 20px 0 rgba(0, 1, 1, 0.25);
+}
+
+.search-tours {
+	min-height: 473px;
+}
+
 .search-tours-wrap {
 	width: 570px;
 	margin: 0 auto;
 }
 
-.search-tours h2 {
-	margin: 0;
-}
-
-.search-tours button:first-child {
-	padding: 30px 10px;
-	width: 100%;
-
-	box-shadow: 0px 10px 20px 0 rgba(0, 1, 1, 0.25);
-}
-
 .search-tours form {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	padding: 56px;
+
+	background-color: #ffffff;
 	box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 .search-tours-form p {
-
+	display: flex;
+	width: 100%;
 	margin: 0;
 	margin-bottom: 30px;
 }
 
 .search-tours-form label {
+	width: 112px;
 	line-height: 26px;
 }
 
-.search-tours-form input {
-	font: inherit;
+.search-tours-form .label-small {
+	width: 65px;
+	margin-left: auto;
+}
 
+.search-tours-form input {
+	flex-grow: 1;
+	padding-left: 13px;
+	padding-right: 30px;
+	align-self: stretch;
+
+	font: inherit;
+	line-height: 26px;
+	text-transform: uppercase;
 	background-color: #f2f2f2;
 	border: none;
 }
@@ -388,6 +441,80 @@ input[type="radio"].visually-hidden {
 	border: 2px solid #e5e5e5;
 }
 
+.search-tours-option {
+	position: relative;
+}
+
+.search-tours-option .calendar {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	right: 12px;
+	top: 3px;
+
+	background-image: url(../img/icon-calendar-gray.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	cursor: pointer;
+}
+
+.search-tours-option .calendar:hover {
+	background-image: url(../img/icon-calendar.svg);
+}
+
+.search-tours-option .calendar:focus,
+.search-tours-option .calendar:active {
+	background-image: url(../img/icon-calendar-blue.svg);
+}
+
+.search-tours-form input[type="number"] {
+	flex-grow: 0;
+	width: 115px;
+	padding-right: 0;
+
+	text-align: center;
+}
+
+.search-tours-option .plus,
+.search-tours-option .minus {
+	position: absolute;
+	top: 3px;
+
+	font-size: 20px;
+	color: #a9a9a9;
+
+	cursor: pointer;
+}
+
+.search-tours-option .plus-adults {
+	left: 202px;
+}
+
+.search-tours-option .plus-children {
+	left: 420px;
+}
+
+.search-tours-option .minus-adults {
+	left: 136px;
+}
+
+.search-tours-option .minus-children {
+	left: 356px;
+}
+
+.plus:hover,
+.minus:hover {
+	color: #000000;
+}
+
+.plus:focus,
+.minus:focus,
+.plus:active,
+.minus:active {
+	color: #81b3d2;
+}
+
 .search-tours-form button {
 	width: 100%;
 	padding: 16px 0;
@@ -398,7 +525,7 @@ input[type="radio"].visually-hidden {
 
 	background-color: #81b3d2;
 	background-image: url("../img/bg-cat.jpg");
-	background-position: center center;
+	background-position: 40% center;
 	background-repeat: no-repeat;
 }
 
@@ -408,6 +535,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filters fieldset {
+	margin: 0;
+	padding: 0;
+
 	border: none;
 }
 
@@ -431,11 +561,12 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 }
 
-.filters-form li {
+.filter-option {
+	padding-left: 40px;
 	padding-bottom: 23px;
 }
 
-.filters-form li:last-child {
+.filter-option:last-child {
 	padding-bottom: 0;
 }
 
@@ -443,6 +574,162 @@ input[type="radio"].visually-hidden {
 	font: inherit;
 	font-weight: 400;
 	text-align: center;
+}
+
+.filter-option label {
+	display: block;
+	position: relative;
+
+	cursor: pointer;
+	user-select: none;
+}
+
+.filter-option-input + label::before {
+	content: "";
+  position: absolute;
+  left: -40px;
+  top: -20%;
+
+  width: 24px;
+  height: 24px;
+}
+
+.filter-option-input:not(:checked) + label::before {
+	background-image: url("../img/checkbox-off.svg");
+	background-repeat: no-repeat;
+  background-position: 0 0; 
+  
+}
+
+.filter-option-input:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-option-input:focus + label::before {
+	outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-option-input:not(:checked):disabled + label {
+	color: #6a6a6a;
+}
+.filter-option-input:not(:checked):disabled + label::before {
+	background-image: url(../img/checkbox-off-dis.svg);
+}
+
+.filter-option-input:checked:disabled + label {
+	color: #6a6a6a;
+}
+
+.filter-option-input:checked:disabled + label::before {
+	background-image: url(../img/checkbox-on-dis.svg);
+}
+
+.range-price {
+	position: relative;
+
+	height: 32px;
+	margin-bottom: 20px;
+
+	font-size: 0;
+
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.range-price::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.range-price label {
+	display: inline-block;
+	margin: 6px 0;
+
+	font-size: 14px;
+	line-height: 21px;
+  vertical-align: bottom;
+
+  cursor: pointer;
+}
+
+.range-price .min-price,
+.range-price .max-price {
+  width: 110px;
+  padding-left: 41px;
+}
+
+.range-price input {
+	width: 50px;
+	margin: 0;
+
+	color: inherit;
+	font: inherit;
+	text-align: left;
+
+	background: none;
+	border: none;
+}
+
+.range-sliders {
+	position: relative;
+
+	margin-bottom: 32px;
+}
+
+.range-sliders .line {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-sliders .line-fill {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-slider {
+	position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-slider:hover {
+	background: #1c4f80;
+}
+
+.range-slider-min {
+	left: 0%;
+}
+
+.range-slider-max {
+	left: 80%;	
+}
+
+.filter-range .button {
+	display: block;
+	margin: 0 auto;
+	padding: 6px 36px;
 }
 
 .sort {
@@ -490,15 +777,43 @@ input[type="radio"].visually-hidden {
 	border-bottom: 1px dotted #81b3d2;
 }
 
-.sort-current a {
+.sort-list a:hover {
+	color: #81b3d2;
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-list a:active,
+.sort-list a:focus {
+	color: #000000;
+	border: none;
+}
+
+.sort-list-current a {
 	color: #81b3d2;
 	border: none;
 }
 
-.sort-updown {
-	width: 50px;
+.sort-updown { 
 	margin: auto 0;
 	margin-left: auto;
+	margin-right: 72px;
+}
+
+.sort-updown a:first-child {
+	padding-right: 6px;
+}
+
+.sort-updown a:hover path {
+	fill: #231f20;
+}
+
+.sort-updown a:active path,
+.sort-updown a:focus path {
+	fill: #81b3d2;
+}
+
+.sort-updown-current path {
+	fill: #81b3d2;
 }
 
 .catalog-list {
@@ -530,15 +845,24 @@ input[type="radio"].visually-hidden {
 	margin-right: 72px;
 }
 
-.catalog-item h3 {
+.catalog-item-title {
 	margin: 0;
 
 	font-size: 21px;
 	line-height: 26px;
 }
 
-.catalog-item h3>a {
+.catalog-item-title a {
 	color: #000000;
+}
+
+.catalog-item-title a:hover {
+	color: #81b3d2;
+}
+
+.catalog-item-title a:active,
+.catalog-item-title a:focus {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-item-wrap p {
@@ -569,20 +893,28 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 
 	color: #81b3d2;
+	cursor: default;
 }
 
 .catalog-item-rate {
 	margin: 0;
+	padding: 3px 0;
+	padding-left: 16px;
+	padding-right: 14px;
 
 	font-weight: 400;
 	color: #666666;
+	cursor: default;
 
 	background-color: #f2f2f2;
 }
 
 .main-footer {
 	display: flex;
+
 	text-align: center;
+
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-footer a {
@@ -646,8 +978,6 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-copyright {
-	position: relative;
-
 	margin: auto 0;
 	width: 33.3%;
 
@@ -670,6 +1000,10 @@ input[type="radio"].visually-hidden {
 .footer-copyright a:active path,
 .footer-copyright a:focus path {
 	fill: #bdbbbc;
+}
+
+.catalog-footer {
+	background-color: #ffffff;
 }
 
 

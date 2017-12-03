@@ -12,14 +12,16 @@
   <div class="container">
     <header class="main-header">
     	<nav class="main-nav">
-        <ul class="site-nav">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photos.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-        <div class="header-logo">
-          <img src="img/logo.svg" width="135" height="70" alt="Логотип City of Sedona">
+        <div class="header-wrap">
+          <ul class="site-nav">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="photos.html">Фото и видео</a></li>
+            <li><a href="map.html">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+          <div class="header-logo">
+            <img src="img/logo.png" width="135" height="70" alt="Логотип City of Sedona">
+          </div>
         </div>
       </nav>
     </header>
@@ -37,7 +39,7 @@
     			<p>- №1 -</p>
     			<p>Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
     		</div>
-        <img src="img/first-feature.jpg" width="800" height="400" alt="Настоящий городок">
+        <div class="img"><span class="visually-hidden">Фотография Седоны</span></div>
       </section>
 
       <section class="recommend">
@@ -67,7 +69,7 @@
          <p>- №2 -</p>
          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
        </div>
-       <img src="img/second-feature.jpg" width="800" height="400" alt="Мост дьявола">
+       <div class="img"><span class="visually-hidden">Фотография моста дьявола</span></div>
      </section>
 
      <section class="other-features">
@@ -94,43 +96,35 @@
  <section class="search-hotels">
   <h2>Заинтересовались?</h2>
   <p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-</section>
-
-<section class="map">
-  <img src="img/map.svg" width="600" height="475" alt="От Флагстаффа на юг по 17 шоссе">
-  <!--Здесь будет карта-->
+  <button class="button" type="button">Поиск гостиницы в Седоне</button>
 </section>
 
 <section class="search-tours">
   <div class="search-tours-wrap">
-  <h2><button class="button" type="button">Поиск гостиницы в Седоне</button></h2>
-  <form class="search-tours-form" action="#" method="post">
-    <p>
-      <label>
-        Дата заезда:
-        <input type="date" name="arrival">
-      </label>
-    </p>
-    <p>
-      <label>
-        Дата выезда:
-        <input type="date" name="departure">
-      </label>
-    </p>
-    <p>
-      <label>
-        Взрослые:
-        <input type="number" name="adults" value="2">
-      </label>
-    </p>
-    <p>
-      <label>
-        Дети:
-        <input type="number" name="children" value="0">
-      </label>
-    </p>
-    <button type="submit" class="button button-blue">Найти</button>
-  </form>
+    <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
+    <form class="search-tours-form" action="#" method="post">
+      <p class="search-tours-option">
+        <label for="search-tours-arrival">Дата заезда:</label>
+        <input type="date" name="arrival" id="search-tours-arrival" placeholder="24 апреля 2017">
+        <span class="calendar" tabindex="0"></span>
+      </p>
+      <p class="search-tours-option">
+        <label for="search-tours-departure">Дата выезда:</label>
+        <input type="date" name="departure" id="search-tours-departure" placeholder="4 июля 2017">
+        <span class="calendar" tabindex="0"></span>
+      </p>
+      <p class="search-tours-option">
+        <label for="search-tours-adults">Взрослые:</label>
+        <input type="number" name="adults" id="search-tours-adults" placeholder="2">
+        <span class="plus plus-adults" tabindex="0">+</span>
+        <span class="minus minus-adults" tabindex="0">-</span>
+        <label class="label-small" for="search-tours-children">Дети:</label>
+        <input type="number" name="children" id="search-tours-children" placeholder="0">
+        <span class="plus plus-children" tabindex="0">+</span>
+        <span class="minus minus-children" tabindex="0">-</span>
+      </p>
+      <button type="submit" class="button button-blue">Найти</button>
+    </form>
   </div>
 </section>
 </main>
