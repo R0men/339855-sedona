@@ -445,27 +445,23 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
-.search-tours-option .calendar {
+.calendar {
 	position: absolute;
 	width: 23px;
 	height: 23px;
 	right: 12px;
 	top: 3px;
 
-	background-image: url(../img/icon-calendar-gray.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
-
 	cursor: pointer;
 }
 
-.search-tours-option .calendar:hover {
-	background-image: url(../img/icon-calendar.svg);
+.search-tours-option .calendar:hover svg {
+	fill: #000000;
 }
 
-.search-tours-option .calendar:focus,
-.search-tours-option .calendar:active {
-	background-image: url(../img/icon-calendar-blue.svg);
+.search-tours-option .calendar:focus svg,
+.search-tours-option .calendar:active svg {
+	fill: #81b3d2;
 }
 
 .search-tours-form input[type="number"] {
