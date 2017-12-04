@@ -460,12 +460,12 @@ input[type="radio"].visually-hidden {
 	border: none;
 }
 
-.search-tours-option .calendar:hover svg {
+.calendar:hover svg {
 	fill: #000000;
 }
 
-.search-tours-option .calendar:focus svg,
-.search-tours-option .calendar:active svg {
+.calendar:focus svg,
+.calendar:active svg {
 	fill: #81b3d2;
 }
 
@@ -828,12 +828,12 @@ input[type="radio"].visually-hidden {
 	padding-right: 6px;
 }
 
-.sort-updown a:hover path {
+.arrow:hover path {
 	fill: #231f20;
 }
 
-.sort-updown a:active path,
-.sort-updown a:focus path {
+.arrow:active path,
+.arrow:focus path {
 	fill: #81b3d2;
 }
 
@@ -1019,12 +1019,12 @@ input[type="radio"].visually-hidden {
 	vertical-align: middle;
 }
 
-.footer-copyright a:hover path {
+.footer-copyright-logo:hover path {
 	fill: #81b3d2;
 }
 
-.footer-copyright a:active path,
-.footer-copyright a:focus path {
+.footer-copyright-logo:active path,
+.footer-copyright-logo:focus path {
 	fill: #bdbbbc;
 }
 
