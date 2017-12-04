@@ -18,17 +18,13 @@ body > .container {
 	margin: 0 auto;
 
 	background-image:
-		url(../img/main-bg-shape.svg),
-		url(../img/main-cite.svg),
-		url(../img/main-title-2.svg),
-		url(../img/main-title-line.svg),
-		url(../img/main-title-3.svg), 
-		url(../img/main-title-1.svg),
+		url(../img/main-bg-shape.png),
+		url(../img/main-title.png),
 		url(../img/bg.jpg),
-		url(../img/map.svg);
-	background-position: 50% 511px, 50% 405px, 50% 270px, 50% 200px, 50% 188px, 50% 132px, 0 0, 0 bottom;
-	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-	background-size: 100%, auto, auto, auto, auto, auto, 100% 720px, 1200px 593px;
+		url(../img/map.jpg);
+	background-position: 50% 511px, 50% 132px, 0 0, 0 bottom;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+	background-size: 100%, auto, 100% 720px, 1200px 593px;
 
 	box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
@@ -445,14 +441,16 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
-.calendar {
+.search-tours-option .calendar {
 	position: absolute;
+	padding: 0;
 	width: 23px;
 	height: 23px;
 	right: 12px;
 	top: 3px;
 
-	cursor: pointer;
+	background-color: #f2f2f2;
+	border: none;
 }
 
 .search-tours-option .calendar:hover svg {
@@ -475,20 +473,25 @@ input[type="radio"].visually-hidden {
 .search-tours-option .plus,
 .search-tours-option .minus {
 	position: absolute;
-	top: 3px;
+	top: 1px;
+	width: 18px;
+	height: auto;
+	padding: 0;
 
 	font-size: 20px;
 	color: #a9a9a9;
+	vertical-align: middle;
 
-	cursor: pointer;
+	background-color: #f2f2f2;
+	border: none;
 }
 
 .search-tours-option .plus-adults {
-	left: 202px;
+	left: 195px;
 }
 
 .search-tours-option .plus-children {
-	left: 420px;
+	left: 413px;
 }
 
 .search-tours-option .minus-adults {
@@ -591,14 +594,14 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option-input:not(:checked) + label::before {
-	background-image: url("../img/checkbox-off.svg");
+	background-image: url(../img/checkbox-off.svg);
 	background-repeat: no-repeat;
   background-position: 0 0; 
   
 }
 
 .filter-option-input:checked + label::before {
-  background-image: url("../img/checkbox-on.svg");
+  background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
