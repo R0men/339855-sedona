@@ -127,16 +127,21 @@ input[type="radio"].visually-hidden {
 }
 
 .main-nav {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+
 	line-height: 26px;
 	color: #000000;
+
+	background-color: #ffffff;
 }
 
 .site-nav {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	width: 100%;
-	margin: 0;
+	margin: 0 6%;
 	padding: 0;
 
 	list-style: none;
@@ -144,14 +149,10 @@ input[type="radio"].visually-hidden {
 }
 
 .site-nav li {
-	width: 20%;
+	width: 240px;
 	padding: 16px 0;
 
 	text-align: left;
-}
-
-.site-nav li:nth-child(4n+1) {
-	margin-left: 6%;
 }
 
 .site-nav li:nth-child(4n+2) {
@@ -161,10 +162,6 @@ input[type="radio"].visually-hidden {
 .site-nav li:nth-child(4n+3),
 .site-nav li:nth-child(4n+4) {
 	text-align: right;
-}
-
-.site-nav li:nth-child(4n) {
-	margin-right: 6%;
 }
 
 .site-nav a {
@@ -183,15 +180,10 @@ input[type="radio"].visually-hidden {
 	color: #766357;
 }
 
-.header-wrap {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
 .header-logo {
 	width: 135px;
 	height: 70px;
+	margin: 0 auto;
 	margin-top: -56px;
 	margin-bottom: -14px;
 }
@@ -243,12 +235,12 @@ input[type="radio"].visually-hidden {
 .feature-title {
 	width: 33%;
 	padding-top: 47px;
-	padding-bottom: 60px;
+	padding-bottom: 56px;
 }
 
 .feature-title h2 {
 	margin: 0 auto;
-	margin-bottom: 23px;
+	margin-bottom: 24px;
 	padding: 0 20px;
 
 	font-size: 21px;
@@ -265,7 +257,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-title p:first-of-type {
-	margin-bottom: 23px;
+	margin-bottom: 24px;
 }
 
 .first-feature .img {
@@ -299,7 +291,7 @@ input[type="radio"].visually-hidden {
 }
 
 .recommend-item img {
-	height: 80px;
+	height: 70px;
 }
 
 .recommend-item h3 {
@@ -384,7 +376,7 @@ input[type="radio"].visually-hidden {
 
 .search-tours h2 {
 	margin: 0;
-	padding-top: 52px;
+	padding-top: 54px;
 	padding-bottom: 30px;
 
 	font-size: 30px;
@@ -474,6 +466,10 @@ input[type="radio"].visually-hidden {
 .search-tours-option-wrap {
 	display: flex;
 	width: 100%;
+}
+
+.search-tours-form .search-tours-option-wrap:last-of-type {
+	margin-bottom: 25px;
 }
 
 .search-tours-option .calendar {
@@ -596,7 +592,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filters fieldset:first-child {
-	margin-right: 120px;
+	margin-right: 122px;
 }
 
 .filters fieldset:last-child {
@@ -809,8 +805,8 @@ input[type="radio"].visually-hidden {
 }
 
 .sort > p {
-	margin-top: 30px;
-	margin-bottom: 32px;
+	margin-top: 29px;
+	margin-bottom: 29px;
 	margin-left: 6%;
 	margin-right: 50px;
 
@@ -916,7 +912,8 @@ input[type="radio"].visually-hidden {
 .catalog-item-wrap {
 	display: flex;
 	flex-direction: column;
-	margin: 31px 0;
+	justify-content: space-between;
+	margin: 27px 0;
 	margin-bottom: 24px;
 }
 
@@ -964,12 +961,12 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-type {
-	width: 45%;
+	width: 36%;
 }
 
 .catalog-item .button {
-	margin-right: 6px;
-	padding: 3px 17px;
+	margin-right: 5px;
+	padding: 6px 17px;
 }
 
 .catalog-item .button:last-child {
@@ -984,6 +981,7 @@ input[type="radio"].visually-hidden {
 	letter-spacing: 2px;
 	font-size: 16px;
 	color: #81b3d2;
+	text-align: right;
 	
 	cursor: default;
 }
@@ -991,12 +989,11 @@ input[type="radio"].visually-hidden {
 .catalog-item-rate {
 	margin: 0;
 	margin-bottom: 7px;
-	padding: 3px 0;
-	padding-left: 16px;
-	padding-right: 14px;
+	padding: 3px 14px;
 
 	font-weight: 400;
 	color: #666666;
+	text-align: center;
 
 	background-color: #f2f2f2;
 	cursor: default;
