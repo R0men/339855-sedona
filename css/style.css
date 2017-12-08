@@ -233,14 +233,14 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-title {
-	width: 33%;
-	padding-top: 47px;
-	padding-bottom: 56px;
+	width: 33.4%;
+	padding-top: 46px;
+	padding-bottom: 60px;
 }
 
 .feature-title h2 {
 	margin: 0 auto;
-	margin-bottom: 24px;
+	margin-bottom: 25px;
 	padding: 0 20px;
 
 	font-size: 21px;
@@ -257,11 +257,11 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-title p:first-of-type {
-	margin-bottom: 24px;
+	margin-bottom: 21px;
 }
 
 .first-feature .img {
-	width: 67%;
+	width: 66.6%;
 
 	background-image: url(../img/first-feature.jpg);
 	background-size: cover;
@@ -269,7 +269,7 @@ input[type="radio"].visually-hidden {
 }
 
 .recommend {
-	padding-top: 60px;
+	padding-top: 62px;
 
 	text-align: center;
 
@@ -296,7 +296,7 @@ input[type="radio"].visually-hidden {
 
 .recommend-item h3 {
 	margin: 0;
-	margin-top: 30px;
+	margin-top: 25px;
 	margin-bottom: 23px;
 	padding: 0;
 
@@ -324,7 +324,7 @@ input[type="radio"].visually-hidden {
 }
 
 .other-features {
-	padding-top: 47px;
+	padding-top: 50px;
 
 	text-align: center;
 
@@ -376,8 +376,8 @@ input[type="radio"].visually-hidden {
 
 .search-tours h2 {
 	margin: 0;
-	padding-top: 54px;
-	padding-bottom: 30px;
+	padding-top: 50px;
+	padding-bottom: 25px;
 
 	font-size: 30px;
 	line-height: 36px;
@@ -815,7 +815,8 @@ input[type="radio"].visually-hidden {
 }
 
 .sort h2 {
-	margin: auto 0;
+	margin: 0;
+	margin-top: 35px;
 
 	font-size: 12px;
 	line-height: 18px;
@@ -826,7 +827,8 @@ input[type="radio"].visually-hidden {
 
 .sort-list {
 	display: flex;
-	margin: auto 0;
+	margin: 0;
+	margin-top: 35px;
 	padding: 0;
 
 	font-size: 12px;
@@ -914,7 +916,7 @@ input[type="radio"].visually-hidden {
 	flex-direction: column;
 	justify-content: space-between;
 	margin: 27px 0;
-	margin-bottom: 24px;
+	margin-bottom: 26px;
 }
 
 .catalog-item-wrap:first-child {
@@ -961,11 +963,11 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-type {
-	width: 36%;
+	width: 44%;
 }
 
 .catalog-item .button {
-	margin-right: 5px;
+	margin-right: 3px;
 	padding: 6px 17px;
 }
 
@@ -988,7 +990,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-rate {
 	margin: 0;
-	margin-bottom: 7px;
+	margin-bottom: 3px;
 	padding: 3px 14px;
 
 	font-weight: 400;
@@ -1084,8 +1086,8 @@ input[type="radio"].visually-hidden {
 
 .footer-copyright a {
 	display: inline-block;
-	width: 118px;
-	height: 43px;
+	width: 113px;
+	height: 47px;
 
 	vertical-align: middle;
 }
