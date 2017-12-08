@@ -915,8 +915,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin: 27px 0;
-	margin-bottom: 26px;
+	margin: 26px 0;
 }
 
 .catalog-item-wrap:first-child {
@@ -963,7 +962,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-type {
-	width: 44%;
+	width: 45%;
 }
 
 .catalog-item .button {
