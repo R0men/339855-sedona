@@ -1,3 +1,16 @@
+@keyframes bounce { 
+	0% 		{ transform: translateY(-86px); }
+  70%  	{ transform: translateY(30px);    }
+  90%  	{ transform: translateY(-10px);   }
+  100% 	{ transform: translateY(0);       }
+}
+
+@keyframes shake { 
+	0%, 100% 								{ transform: translateX(0px); }
+	10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+	20%, 40%, 60%, 80%			{ transform: translateX(10px); }
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -427,6 +440,16 @@ input[type="radio"].visually-hidden {
 
 .form-close {
 	display: none;
+}
+
+.form-error {
+	animation-name: shake;
+	animation-duration: 0.5s;
+}
+
+.form-bounce {
+	animation-name: bounce;
+	animation-duration: 0.8s;
 }
 
 .search-tours-form label {
