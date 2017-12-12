@@ -316,7 +316,7 @@ input[type="radio"].visually-hidden {
 	background-image: url(../img/first-feature.jpg);
 	background-size: cover;
 	background-position: 0 50%;
-	background-color: #81b3d2;
+	background-color: #aab7a5;
 }
 
 .recommend {
@@ -377,6 +377,7 @@ input[type="radio"].visually-hidden {
 	background-image: url(../img/second-feature.jpg);
 	background-size: cover;
 	background-position: 0 50%;
+	background-color: #d57965;
 }
 
 .other-features {
@@ -572,6 +573,14 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 23px;
 }
 
+.search-tours-option-wrap .search-tours-option:first-child {
+	width: 277px;
+}
+
+.search-tours-option-wrap .search-tours-option:last-child {
+	width: 181px;
+}
+
 .search-tours-option .calendar {
 	position: absolute;
 	right: 12px;
@@ -599,7 +608,7 @@ input[type="radio"].visually-hidden {
 	-webkit-box-flex: 0;
 	-ms-flex-positive: 0;
 	flex-grow: 0;
-	width: 112px;
+	width: 106px;
 	padding: 0;
 
 	text-align: center;
@@ -628,7 +637,7 @@ input[type="radio"].visually-hidden {
 .plus-minus-wrap {
 	position: relative;
 
-	width: 115px;
+	width: 116px;
 	margin-right: 53px;
 }
 
@@ -1189,8 +1198,19 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+  -ms-flex-align: center;
+	align-items: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
 	width: 33.3%;
-	margin: auto 0;
+	height: auto;
 }
 
 .footer-social ul {
@@ -1248,8 +1268,19 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-copyright {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+  -ms-flex-align: center;
+	align-items: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
 	width: 33.3%;
-	margin: auto 0;
+	height: auto;
 
 	line-height: 26px;
 	font-weight: 400;
@@ -1260,6 +1291,7 @@ input[type="radio"].visually-hidden {
 	width: 113px;
 	height: 47px;
 	margin-top: 10px;
+	margin-left: 10px;
 
 	vertical-align: middle;
 }
