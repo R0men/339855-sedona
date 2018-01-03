@@ -17,6 +17,8 @@ formButton.addEventListener("click", function(evt) {
 searchForm.addEventListener("submit", function(evt) {
  	if (!inputArrival.value || !inputDeparture.value || !inputAdults.value || !inputChildren.value) {
  		evt.preventDefault();
+ 		searchForm.classList.remove("form-error");
+		searchForm.offsetWidth = searchForm.offsetWidth;
  		searchForm.classList.add("form-error");
  	}
  });
